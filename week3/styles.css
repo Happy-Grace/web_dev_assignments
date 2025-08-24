@@ -1,0 +1,93 @@
+/* STYLING STARTS HERE */
+
+/* 1. UNIVERSAL SELECTOR */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. ELEMENT/TAG SELECTOR */
+body {
+    font-family: "Federant", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/* 3. ID SELECTOR */
+#sect1 {
+    border: 2px dashed #666;
+    margin: 30px 25px;
+    padding: 20px;    
+    background-color: #eee;
+}
+
+
+/* 4. CLASS SELECTOR */
+.box {
+    background-color: white;
+    padding: 20px;
+    border: 5px solid cornflowerblue;
+    margin: 15px 10px;
+    position: relative;
+}
+
+/* 5. Descendant selector */
+.box p {
+  color: red;
+  margin: 0;
+  font-size: 21px;
+}
+
+/* 6. Child selector */
+#sect1 > .box {
+  border-radius: 15px;
+}
+
+/* 7. Pseudo-class selector */
+.box:hover {
+  outline: 3px dotted #FF4081;
+  cursor: pointer;
+}
+
+/* 8. Pseudo-element selector */
+.box::before {
+  content: "★ ";
+  color: dodgerblue;
+  font-size: 20px;
+  position: absolute;
+  left: -25px;
+  top: 14px;
+}
+
+/* 9. Adjacent sibling selector */
+.box + .box {
+  background-color: antiquewhite;
+  border-color: fuchsia;
+  font-size: 20px;
+  color: blueviolet;  
+}
+
+.box + .adajacent-box {
+  background-color: #e1f5fe;
+  border-color: brown;
+  font-size: 20px;
+  color: steelblue;  
+}
+
+/* 10. General sibling selector */
+.box ~ .general-box {
+  background-color: azure;
+  border-color: #FF9800;
+  font-size: 20px;
+  color: saddlebrown;
+}
+
+/* Attribute Selector */

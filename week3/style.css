@@ -1,0 +1,71 @@
+/* 1. Universal selector */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* 2. Type selector */
+body {
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+/* 3. ID selector */
+#box-container {
+  border: 2px dashed #666;
+  padding: 20px;
+  margin: 20px;
+  background-color: #eee;
+}
+
+/* 4. Class selector */
+.box {
+  background-color: white;
+  padding: 20px;
+  border: 5px solid #4CAF50;
+  margin: 15px 0;
+  position: relative;
+}
+
+/* 5. Descendant selector */
+.box p {
+  color: #333;
+  margin: 0;
+}
+
+/* 6. Child selector */
+#box-container > .box {
+  border-radius: 10px;
+}
+
+/* 7. Adjacent sibling selector */
+.box + .box {
+  background-color: #e1f5fe;
+  border-color: #03A9F4;
+}
+
+/* 8. General sibling selector */
+.box ~ .another-box {
+  background-color: #fff3e0;
+  border-color: #FF9800;
+}
+
+/* 9. Attribute selector */
+.box[data-type="demo"] {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 10. Pseudo-class selector */
+.box:hover {
+  outline: 3px dotted #FF4081;
+}
+
+/* 11. Pseudo-element selector */
+.box::before {
+  content: "★ ";
+  color: gold;
+  font-size: 20px;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+}
