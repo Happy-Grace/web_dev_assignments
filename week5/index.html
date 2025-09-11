@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding JavaScript and DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/js.png" type="image/png">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="nav-header">
+        <h1>JavaScript And DOM Manipulation</h1>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENTS -->
+     <main>
+        <!-- FIRST SECTION -->
+        <section class="sect1">
+            <div class="cards result-container">
+                <h2>RESULT CHECKER</h2>
+                <p>Input your score to check.</p>
+                <input type="text" id="resultInp" placeholder="Enter your score">
+                <button id="resultBtn" onclick="result_checker()">Click</button>
+                <p id="result">Result: </p>
+            </div>
+
+            <div class="cards">
+                <h2>CALCULATING SIMPLE INTEREST</h2>
+                <p>Input the needed values to calculate simple interest($).</p>
+
+                <div class="inner-container">
+                    <label for="">Principal:</label>
+                    <input type="text" id="principal" placeholder="Enter the initial principal amount">
+                </div>
+
+                <div class="inner-container">
+                    <label for="">Rate:</label>
+                    <input type="text" id="rate" placeholder="Enter the annual interest rate">
+                </div>
+
+                <div class="inner-container">
+                    <label for="">Time:</label>
+                    <input type="text" id="time" placeholder="Enter time (in years).">
+                </div>
+
+                <button id="interestCalc" class="calc">Calculate</button>
+                <p id="interestResult">Result: </p>
+            </div>
+
+            <div class="cards">
+                <ul class="list-container" id="lists"></ul>
+            </div>
+        </section>
+
+        <!-- SECOND SECTION -->
+        <!-- <section>
+            <div>
+                <ul></ul>
+            </div>
+        </section> -->
+     </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
