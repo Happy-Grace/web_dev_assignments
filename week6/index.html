@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Event Handling in JS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/node-js.png" type="image/png">
+</head>
+<body>
+  <header>
+    <h1 id="header-title">Welcome to This Site</h1>
+
+    <!-- 🔽 Simple Dropdown Menu -->
+    <nav class="dropdown">
+      <button class="dropbtn">Menu ⬇️</button>
+      <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 🔘 Toggle Message -->
+    <section class="content">
+      <button id="toggle-btn">Toggle Message</button>
+      <p id="message" class="hidden">Hello, [UserName]! You toggled this message.</p>
+    </section>
+
+    <!-- ⌨️ Keyboard Input -->
+    <section class="content content1">
+      <label for="keyboard-input">Type something: </label>
+      <input type="text" id="keyboard-input" autocomplete="off" />
+      <p>Your input: <span id="display-text"></span></p>
+    </section>
+
+    <!-- 🔢 Counter / Button Game -->
+    <section class="content counter-contents">
+      <h2>Counter Game</h2>
+      <p>Current Count: <span id="counter">0</span></p>
+      <button id="increment">Increment</button>
+      <button id="decrement">Decrement</button>
+      <button id="reset">Reset</button>
+    </section>
+
+    <!-- 📚 Collapsible FAQ Section -->
+    <section class="content">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is this site about?</button>
+        <div class="faq-answer">This site showcases JavaScript event handling with DOM manipulation.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Who built this?</button>
+        <div class="faq-answer">The person that submitted this assignment..</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I use these features?</button>
+        <div class="faq-answer">Yes, everything here is interactive and reusable.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How was the creation process of this FAQ Section?</button>
+        <div class="faq-answer">It took a little while, but we still got here didn't we?..</div>
+      </div>
+    </section>
+
+    <!-- 🧩 Tabbed Interface -->
+    <section class="content">
+      <h2>Tabbed Content</h2>
+      <div class="tabs">
+        <button class="tab-button" data-tab="tab1">Tab 1</button>
+        <button class="tab-button active" data-tab="tab2">Tab 2</button>
+        <button class="tab-button" data-tab="tab3">Tab 3</button>
+      </div>
+      <div class="tab-content" id="tab1">
+        This is Tab 1 content, and you get this emojis: ☺️🤣😅😋😚.
+      </div>
+      <div class="tab-content active" id="tab2">
+        This is Tab 2 content, emoji for this Tab is: 😕🥺😢😏🙂‍↕️.
+      </div>
+      <div class="tab-content" id="tab3">
+        Welcome to Tab 3 content, enjoy: 😶🤫🤭🤗😪.
+      </div>
+    </section>
+
+    <!-- 📝 User Registration Form -->
+    <section class="content">
+      <h2>Register</h2>
+      <form id="registration-form" novalidate>
+        <label for="form-name">Name:</label>
+        <input type="text" id="form-name" required />
+        <small class="error" id="name-error"></small>
+
+        <label for="form-email">Email:</label>
+        <input type="email" id="form-email" required />
+        <small class="error" id="email-error"></small>
+
+        <label for="form-password">Password:</label>
+        <input type="password" id="form-password" required />
+        <small class="error" id="password-error"></small>
+
+        <label for="form-confirm-password">Confirm Password:</label>
+        <input type="password" id="form-confirm-password" required />
+        <small class="error" id="confirm-password-error"></small>
+
+        <button type="submit">Submit</button>
+        <p id="form-success" class="success hidden">✅ Registration successful!</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 C. Divinegift Akuwudike.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
